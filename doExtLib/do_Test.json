@@ -1,0 +1,112 @@
+{
+  "ID": "do_BorderView",
+  "IsContainer": "1",
+  "Type": "UI",
+  "Name": "边界视图",
+  "Version": "Internal",
+  "Description": "这个UI组件包含多个子视图(UI文件），里面最多能放五个子视图，分别停靠在上、右、下、左、中五条边线，组件绘制顺序为上右下左中，子视图之间不会重叠，若某一方向的子视图过大，造成下一顺序的子视图没有可用空间绘制则不显示下一顺序的子视图",
+  "Icon": "",
+  "IOS": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "bottomView",
+      "Name": "居下子视图",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "设置要显示的居下子视图ui文件路径",
+      "Design": {
+        "Type": "FileSource",
+        "Data": []
+      }
+    },
+    {
+      "ID": "centerFillParent",
+      "Name": "居中子视图填充父容器",
+      "Type": "Bool",
+      "DefaultValue": "false",
+      "EditType": "1",
+      "Group": "",
+      "Description": "居中的子视图是否向四周填充，为false时不填充，此时居中子视图会居中显示；为true时填充上、右、下、左子视图（若存在）绘制完成后的中间剩余部分",
+      "Design": {
+        "Type": "Boolean",
+        "Data": []
+      }
+    },
+    {
+      "ID": "centerView",
+      "Name": "居中子视图",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "设置要显示的居中子视图视图ui文件路径",
+      "Design": {
+        "Type": "FileSource",
+        "Data": []
+      }
+    },
+    {
+      "ID": "leftView",
+      "Name": "居左子视图",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "设置要显示的居左子视图视图ui文件路径",
+      "Design": {
+        "Type": "FileSource",
+        "Data": []
+      }
+    },
+    {
+      "ID": "rightView",
+      "Name": "居右子视图",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "设置要显示的居右子视图ui文件路径",
+      "Design": {
+        "Type": "FileSource",
+        "Data": []
+      }
+    },
+    {
+      "ID": "topView",
+      "Name": "居上子视图",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "设置要显示的居上子视图ui文件路径",
+      "Design": {
+        "Type": "FileSource",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [],
+  "syncMethodes": [],
+  "asyncMethodes": []
+}
